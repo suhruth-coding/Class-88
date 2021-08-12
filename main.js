@@ -34,14 +34,14 @@ window.addEventListener("keydown",my_keydown);
 function my_keydown(e){
     keyPressed = e.keyCode;
     console.log(keyPressed);
-    if(e.shiftkey == true && keyPressed == '80'){
+    if(e.shiftKey == true && keyPressed == '80'){
         console.log("P And Shift Pressed Together");
         block_width = block_width + 10;
         block_height = block_height + 10;
         document.getElementById("current_width").innerHTML = block_width;
         document.getElementById("current_height").innerHTML = block_height;
     }
-    if(e.shiftkey == true && keyPressed == '77'){
+    if(e.shiftKey == true && keyPressed == '77'){
         console.log("M And Shift Pressed Together");
         block_width = block_width - 10;
         block_height = block_height - 10;
